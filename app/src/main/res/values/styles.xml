@@ -1,0 +1,65 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Splash Screen activity theme. -->
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Main menu activity theme. -->
+    <style name="wshMainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/dim_foreground_material_dark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Flugzeug menu activity theme. -->
+    <style name="wshLfzTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/dim_foreground_material_light</item>
+        <item name="colorPrimaryDark">@color/dim_foreground_material_dark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Winde menu activity theme. -->
+    <style name="wshWindeTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/dim_foreground_material_light</item>
+        <item name="colorPrimaryDark">@color/dim_foreground_material_dark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Test -->
+    <style name="CustomActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Text color -->
+        <item name="android:textColor">@android:color/holo_orange_dark</item>
+        <!-- Background color -->
+        <item name="itemBackground">@color/dim_foreground_material_light</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>
+

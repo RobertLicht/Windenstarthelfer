@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rec_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.l520.wsh_0_003.RecDataActivity">
+
+    <TextView
+        android:text="Sensordaten - Beschleunigung (linear)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textSensACClinear"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textSensACClinear"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:text="X"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textSensACClinear"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textAccX"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:text="Y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textSensACClinear"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textAccY"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:text="Z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textSensACClinear"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textAccZ"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Sensordaten - Luftdruck und Höhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textSensPressure"
+        android:layout_below="@+id/textGeschwGPS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="QFE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonQFE"
+        android:layout_below="@+id/textAtitude"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btnDatenAufz" />
+
+    <Button
+        android:text="Daten aufzeichnen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDatenAufz"
+        android:elevation="0dp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="62dp"
+        android:textAlignment="center"
+        android:layout_above="@+id/buttonOpenSaveDir"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="-- [km/h]"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textCombiSpeed"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="36sp"
+        android:layout_alignTop="@+id/textGeschwGPS"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:text="-- [km/h]"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textGeschwGPS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/textSensGeschwGPS"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Sensordaten - Geschwindigkeit\n(GPS)                    |       (GPS + Baro)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textSensGeschwGPS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Speicherort öffnen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonOpenSaveDir"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="  Luftdruck [hPa]: --"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textPressure"
+        android:layout_alignBottom="@+id/buttonQFE"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/buttonOpenSaveDir" />
+
+    <TextView
+        android:text="Höhe üNN. [m]: --"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textAtitude"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textAlignment="center"
+        android:layout_below="@+id/textSensPressure"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

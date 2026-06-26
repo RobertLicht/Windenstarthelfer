@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_menu_flugzeug_bearbeiten"
+        android:title="Bearbeiten"
+        android:icon="@drawable/ic_border_color_black_48dp"/>
+
+    <item
+        android:id="@+id/nav_menu_flugzeug_verbindung"
+        android:title="Verbindung testen"
+        android:icon="@drawable/ic_network_check_black_48dp"/>
+    <item
+        android:id="@+id/nav_menu_flugzeug_location"
+        android:title="Position"
+        android:icon="@drawable/ic_my_location_black_48dp"/>
+
+    <item
+        android:id="@+id/nav_menu_flugzeug_sensoren"
+        android:title="Sensoren"
+        android:icon="@mipmap/ic_launcher"/>
+
+    <item
+        android:id="@+id/nav_menu_flugzeug_mehr"
+        android:title="Mehr...">
+
+        <menu>
+
+            <item android:id="@+id/nav_menu_flugzeug_einstellungen"
+                android:title="Einstellungen"
+                android:icon="@drawable/ic_settings_black_48dp"/>
+
+        </menu>
+
+
+    </item>
+
+</menu>
+

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_location"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.l520.wsh_0_003.LocationActivity">
+
+    <TextView
+        android:text="Längengrad:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLongitude"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="49dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Breitengrad:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/tvLatitude"
+        android:layout_below="@+id/tvLongitude"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Höhe:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="37dp"
+        android:id="@+id/tvAltitudeText"
+        android:layout_below="@+id/tvLatitude"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Zeit (UTC):"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/tvTimeUTCText"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Bewegungsrichtung:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="36dp"
+        android:id="@+id/tvBearingText"
+        android:layout_below="@+id/tvAltitudeText"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Geschwindigkeit:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@+id/tvBearingText"
+        android:layout_marginTop="55dp"
+        android:id="@+id/tvSpeedText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Genauigkeit GPS:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/tvAccuracyGPS"
+        android:layout_below="@+id/tvSpeedText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="74dp" />
+
+</RelativeLayout>

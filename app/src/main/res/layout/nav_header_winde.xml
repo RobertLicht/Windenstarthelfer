@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:background="@android:color/holo_green_light"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:gravity="bottom"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delivery_truck"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\nEinstellungen - Winde"
+        android:id="@+id/textView3"
+        android:textColor="@android:color/black"
+        android:layout_weight="0.34" />
+
+</LinearLayout>
+

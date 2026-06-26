@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.l520.wsh_0_003"
+    android:versionCode="4"
+    android:versionName="0.004">
+
+    <!-- Register permissions for Location services and wake lock -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Register permission to write on external storage and create directories -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/wsh_launcher"
+        android:label="WSH"
+        android:supportsRtl="true">
+
+        <!-- android:theme="@style/AppTheme"> -->
+        <activity
+            android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/wshMainTheme" />
+        <activity
+            android:name=".Flugzeug"
+            android:label="Flugzeug"
+            android:screenOrientation="portrait"
+            android:theme="@style/wshLfzTheme" />
+        <activity
+            android:name=".Winde"
+            android:label="Winde"
+            android:screenOrientation="portrait"
+            android:theme="@style/wshWindeTheme" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="Über WSH"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LocationActivity"
+            android:label="Position"
+            android:screenOrientation="portrait"
+            android:theme="@style/wshLfzTheme" />
+        <activity
+            android:name=".SensorActivity"
+            android:label="Sensoren"
+            android:screenOrientation="portrait"
+            android:theme="@style/wshLfzTheme" />
+        <activity
+            android:name=".RecDataActivity"
+            android:label="Datenaufzeichnung"
+            android:screenOrientation="portrait"
+            android:theme="@style/wshLfzTheme" />
+
+        <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+    </application>
+
+</manifest> <!-- auskommentiert </> -->

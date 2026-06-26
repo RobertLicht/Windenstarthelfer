@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:background="@drawable/bgrnd_act_flugzeug">
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu_flugzeug"
+        app:headerLayout="@layout/nav_header_flugzeug"
+        android:id="@+id/navigationView_flugzeug"
+        android:layout_gravity="start">
+
+    </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>

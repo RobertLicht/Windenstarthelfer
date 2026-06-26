@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sensor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.l520.wsh_0_003.SensorActivity">
+
+    <TextView
+        android:text="Sensordaten - Beschleunigung (linear)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textBeschLinear"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Y-Achse:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAxisX"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textAxisY"
+        android:layout_alignEnd="@+id/textAxisX" />
+
+    <TextView
+        android:text="Z-Achse:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textAxisZ"
+        android:layout_below="@+id/textAxisY"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textAxisX" />
+
+    <TextView
+        android:text="Sensordaten - Beschleunigung (Mittelwert)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAxisZ"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textBeschleuRelativ"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="X"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textBeschleuRelativ"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textX"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textX"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textY"
+        android:layout_alignEnd="@+id/textX" />
+
+    <TextView
+        android:text="Z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textY"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textZ"
+        android:layout_alignEnd="@+id/textY" />
+
+    <TextView
+        android:text="Sensortaten - Gyroskop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textZ"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textGyroskop"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:text="Um X-Achse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textGyroskop"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textGyroX"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Um Y-Achse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textGyroX"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textGyroY"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Um Z-Achse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textGyroY"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textGyroZ"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="X-Achse:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textAxisX"
+        android:layout_below="@+id/textBeschLinear"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Geschwindigkeit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textGyroZ"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textGeschwindigkeit"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="X-Geschwindigkeit [m/s]:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textGeschwindigkeit"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textGeschwindigkeitX"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Y-Geschwindigkeit [m/s]:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textGeschwindigkeitX"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textGeschwindigkeitY"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Z-Geschwindigkeit [m/s]:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textGeschwindigkeitY"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textGeschwindigkeitZ"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Y-mittlere Geschwindigkeit [m/s]:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textMittelGeschwX"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textMittelGeschwY"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="14sp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="X-Mittlere Geschwindigkeit [m/s]:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textMittelGeschwX"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/textGeschwindigkeitZ"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Weiter zu Daten aufzeichnen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonDataRec"
+        android:elevation="0dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp" />
+</RelativeLayout>
