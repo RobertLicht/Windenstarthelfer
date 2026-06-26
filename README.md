@@ -4,7 +4,13 @@
 
 An Android application for calculating cable forces during glider winch launches using smartphone sensors.
 
-![RAG-Browser Example](./images/rag-browser-example-01.png "Usage example of the RAG-Browser application")
+![Comunication between Aircraft, Groundstation and Winch](./images/WSH-Kommunikation_1024.png)
+
+---
+
+Short clip, that showcases some functions of the Android Application `Windenstarthelfer (WSH)`
+
+![Demo-GIF of the WSH-App](./video/WSH-Demo_360_9-19_best.gif)
 
 ## Overview
 
