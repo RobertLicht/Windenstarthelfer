@@ -4,11 +4,17 @@
 
 An Android application for calculating cable forces during glider winch launches using smartphone sensors.
 
+![RAG-Browser Example](./images/rag-browser-example-01.png "Usage example of the RAG-Browser application")
+
 ## Overview
 
 This project was developed as a research project at the **Institut für Technische Mechanik** under the supervision of **Prof. Dr.-Ing. habil. Gunther Brenner** by **Robert-Vincent Lichterfeld**.
 
 The app uses built-in smartphone sensors to record flight data during winch launches and calculates the cable force based on aircraft characteristics and environmental conditions.
+
+### Project Work
+
+[Concept for determining cable tension during winch launches using a mobile device](./docs/WSH_Presentation_PA_EXTnoMov.pdf)
 
 ## Features
 
