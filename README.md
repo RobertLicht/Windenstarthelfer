@@ -1,4 +1,4 @@
-# Windenstarthelfer (WSH)
+# Windenstarthelfer (WSH) :flight_departure:
 
 **Projekt zur Ermittlung der Seilkraft im Windenstart durch ein mobiles Endgerät**
 
